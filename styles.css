@@ -261,20 +261,6 @@ aside .userImg::before {
 
 @media (max-width: 600px) {
   body {
-    width: 85%;
-  }
-  .content-container{
-    flex-direction: column;
-  }
-  aside {
-    justify-content: center;
-    margin-top: 25px;
-  }
-} 
-
-/* Mobile styles (up to 480px width) */
-@media (max-width: 480px) {
-  body {
     width: 100%;
   }
   header{
@@ -290,8 +276,13 @@ aside .userImg::before {
     font-size: 0.8rem;
   }
   .content-container{
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
+    flex-direction: column;
+  }
+  aside {
+    justify-content: center;
+    margin-top: 25px;
   }
   article .specialization{
     font-size: 1.8rem;
@@ -308,7 +299,7 @@ aside .userImg::before {
     width: 200px;
     height: 250px;
   }  
-}
+} 
 
 @keyframes left-move {
   50% {
